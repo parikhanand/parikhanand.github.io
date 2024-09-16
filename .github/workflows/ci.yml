@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
   push:
@@ -21,15 +21,15 @@ jobs:
 
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
 
       - name: Setup node env 🏗
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 
       - name: Cache node_modules 📦
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -42,3 +42,8 @@ jobs:
       - name: Run linter 👀
         run: npm run lint
 
+      - name: Run tests 🧪
+        run: npm test
+
+      - name: Build 🚀
+        run: npm run build
