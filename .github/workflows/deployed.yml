@@ -6,6 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
       - name: Build prod site and move contents from dist to root
         run: |
           rm -rf index.html _nuxt assets .nojekyll 200.html favicon.ico nuxt.config.js README.md *.xml
