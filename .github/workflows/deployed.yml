@@ -17,7 +17,7 @@ jobs:
           cd source/
           npm i
           npm run build
-          sudo mv dist/* ../
+          mv dist/* ../
           rm -rf dist node_modules .nuxt
 
       - name: Commit files
