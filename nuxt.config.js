@@ -2,7 +2,6 @@ export default {
   ssr: true,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Anand Parikh - Full Stack Developer - Portfolio',
