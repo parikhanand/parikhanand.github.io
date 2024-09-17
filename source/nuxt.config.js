@@ -41,7 +41,7 @@ export default {
       },
       {
         hid: 'gtm-script1',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-Q8P4R9MERP',
+        src: 'https://www.googletagmanager.com/ns.html?id=GTM-KT4S8B86',
         async: true,
         defer: true,
       },
