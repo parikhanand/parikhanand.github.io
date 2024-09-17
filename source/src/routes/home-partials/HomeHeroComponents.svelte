@@ -1,5 +1,5 @@
 <script lang="ts">
-    import profileImg from '$lib/assets/images/profile.jpeg';
+    import profileImg from '$lib/assets/images/profile.webp';
     import { Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
