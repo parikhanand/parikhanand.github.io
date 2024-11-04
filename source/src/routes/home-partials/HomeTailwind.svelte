@@ -21,7 +21,7 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-10 items-start">
     <!-- Preview -->
-    <div class="col-span-2">
+    <div class="col-span-2 lg:order-1 order-2">
         <DocsPreview label={showcase.replace('-', ' ')} regionPreview="min-h-[400px]">
             <svelte:fragment slot="preview">
                 {#if showcase === 'My Hauiler'}
@@ -261,7 +261,7 @@
         </DocsPreview>
     </div>
     <!-- Info -->
-    <div class="space-y-4" id="My_Projects">
+    <div class="space-y-4 lg:order-2 order-1" id="My_Projects">
         <h2 class="h2">My Projects!</h2>
         <p>Some of the projects which I have developed during my professional tenure.</p>
         <!-- Options -->
